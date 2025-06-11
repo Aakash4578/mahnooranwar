@@ -7,3 +7,6 @@ public/assets/images/flight/nexus/Video/nexus_project.mp4
 *.exe
 *.tar
 *.iso
+# .gitignore
+/dist
+
