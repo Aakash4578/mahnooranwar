@@ -1,2 +1,9 @@
 # Ignore large video
 public/assets/images/flight/nexus/Video/nexus_project.mp4
+
+*.mp4
+*.zip
+*.rar
+*.exe
+*.tar
+*.iso
