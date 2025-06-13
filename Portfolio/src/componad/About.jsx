@@ -40,7 +40,6 @@ function About() {
                 <a href="#contact">
                   <button type="button" className="rounded-pill aboutbtn">
                     <span>Contact now</span>
-                    <span className="icon-wrapper"><i className="fa-solid fa-phone"></i></span>
                   </button>
                 </a>
               </div>

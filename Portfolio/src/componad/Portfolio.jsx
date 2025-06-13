@@ -61,25 +61,26 @@ function Portfolio() {
         </div>
         <div className="row portrow">
           {/*  slide project cards */}
-          <Swiper
-            modules={[ Autoplay]}
-            spaceBetween={20} 
-            slidesPerView={3} 
-            navigation={false} 
-            pagination={{ clickable: true }} 
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            breakpoints={{
-              1200: {
-                slidesPerView: 3, 
-              },
-              768: {
-                slidesPerView: 2, 
-              },
-              480: {
-                slidesPerView: 1, 
-              },
-            }}
-          >
+        <Swiper
+  modules={[Autoplay]}
+  spaceBetween={20}
+  centeredSlides={true}
+  slidesPerView={1}
+  autoplay={{ delay: 3000, disableOnInteraction: false }}
+  pagination={{ clickable: true }}
+  breakpoints={{
+    1200: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  }}
+>
+
             {projects.map((project) => (
               <SwiperSlide key={project.id}>
                 <div className="project-card" data-aos="fade-up">
